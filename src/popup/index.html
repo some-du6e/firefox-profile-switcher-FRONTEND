@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firefox Profile Switcher</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <header style="display: flex;">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="main">
+      <header style="display: flex">
         <h3>Firefox Profile Switcher</h3>
-        <img src="gear.svg" height="12" style="margin-left: auto; z-index: -9999;">
-    </header>   
-    
-    <div style="text-align: center; display: flex; justify-content: center;"><img src="icon.svg" alt="Icon" height="64"></div>
-        
-    
-    <div class="profile-list">
-        <button style="width: 100%; height: 25px;"><span>profile 1</span></button>
-        <button style="width: 100%; height: 25px;"><span>profile tuah</span></button>
+        <!--hot dookey button-->
+        <button 
+          onclick="document.getElementById('settings').hidden = !document.getElementById('settings').hidden; document.getElementById('main').hidden = !document.getElementById('main').hidden;"
+        >
+          settings
+        </button>
+      </header>
+
+      <div style="text-align: center; display: flex; justify-content: center">
+        <img src="icon.svg" alt="Icon" height="64" />
+      </div>
+
+      <div class="profile-list">
+        <button style="width: 100%; height: 25px">
+          <span>profile 1</span>
+        </button>
+        <button style="width: 100%; height: 25px">
+          <span>profile tuah</span>
+        </button>
+      </div>
+      <i class="fa-solid fa-gear"></i>
+      <script src="index.js"></script>
     </div>
-    <i class="fa-solid fa-gear"></i>
-    <script src="index.js"></script>
-   
-</body>
+
+    <div hidden id="settings">
+        <button 
+          onclick="document.getElementById('settings').hidden = !document.getElementById('settings').hidden; document.getElementById('main').hidden = !document.getElementById('main').hidden;"
+        >
+        settings
+        </button>
+      <button id="RESET" onclick="confirmReset()">RESET</button>
+      <script>
+        
+      </script>
+    </div>
+  </body>
 </html>
