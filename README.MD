@@ -1,7 +1,5 @@
 # Firefox Profile Switcher
-
-This is a Firefox addon that allows you to easily switch between different Firefox profiles. It is designed to help users manage multiple profiles efficiently.
-
+Alternative to the not working version of the deprecated 
 ## Features
 
 - Quick profile switching

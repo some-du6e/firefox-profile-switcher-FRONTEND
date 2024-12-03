@@ -5,7 +5,7 @@
   "name": "firefox-profile-switcher",
   "version": "1.0",
   "icons": {
-    "48": "icons/message.svg"
+    "48": "icon.svg"
   },
 
   "browser_specific_settings": {
@@ -24,6 +24,6 @@
   ,
   "browser_action": {
     "default_popup": "popup/index.html",
-    "default_icon": "icons/message.svg"
+    "default_icon": "icon.svg"
   }
 }
