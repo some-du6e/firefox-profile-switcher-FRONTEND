@@ -1,0 +1,29 @@
+{
+
+  "description": "firefox-profile-switcher",
+  "manifest_version": 2,
+  "name": "firefox-profile-switcher",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/message.svg"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "firefox-profile-switcher@diddy.org",
+      "strict_min_version": "50.0"
+    }
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+
+  "permissions": ["nativeMessaging"]
+  ,
+  "browser_action": {
+    "default_popup": "popup/index.html",
+    "default_icon": "icons/message.svg"
+  }
+}
