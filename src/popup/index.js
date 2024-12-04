@@ -34,9 +34,19 @@ function addprofiles() {
   });
 }
 document.addEventListener('DOMContentLoaded', getstorage());
-function confirmReset() {
+function confirmReset(){
   if (!confirm('Press cancel to reset')) {
     let clearing = browser.storage.local.clear();
-    alert(clearing);
+    clearing.then(() => {
+      alert(clearing);
+    });
+    
   }
 }
+if (document.getElementById("RESET")) {
+  document.getElementById("RESET").addEventListener("click", confirmReset);
+}
+
+document.getElementById('settings-button').addEventListener('click', function() {
+  location.href ='./settings.html'
+});
